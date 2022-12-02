@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(216, 171, 119);
+    font-weight: bold;
+}
+
+.form-container{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.form-container .login-container{
+    width: 500px;
+    margin: 0 auto;
+}
+.form-container .login-container>h2{
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.form-container .login-container>p,
+.form-container .login-container>span{
+    text-align: center;
+    color: #999;
+}
+
+.form-container .login-container label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+
+}
+
+.form-container .login-container input.input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.form-container .login-container input.input:focus{
+    outline: solid 1px #0099FF; /* Cuando selecionamos el input cambia de color el borde*/
+}
+
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-container a{
+    color: #0099FF;
+    text-decoration: none;
+
+}
+.form-container a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn.btn-login{
+    background-color: black;
+    color: white;
+}
+
+.btn.btn-facebook{
+    background-color: blue;
+    color: white;
+}
+.btn.btn-google{
+    background-color: red;
+    color: white;
+    
+}
+.btn.btn-twitter{
+    background-color: cornflowerblue;
+    color: white;
+
+}
+
+.form-container .login-container .providers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn.btn-login:hover{
+    background-color: #333;
+}
+
+.btn.btn-google:hover{
+    background-color: rgb(151, 10, 10);
+
+}
+
+.btn.btn-facebook:hover{
+    background-color: rgb(8, 69, 182);
+}
+.btn.btn-twitter:hover {
+    background-color: rgb(8, 69, 182);
+}
+
+.form-container .welcome-screen-container{   /*Poner imagen o algo estetico a la pantalla de login*/
+    background-color: black;
+    height: 100%;
+    width: 50%;
+}
+
+@media screen and (max-width:1357px) {
+    .form-container{
+        width: 95%;
+    }
+
+
+    .form-container .login-container{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form-container .welcome-screen-container{
+        width: 40%;
+    }
+}
+@media screen and (max-width:900px){
+    .form-container{
+        height: 70%;
+    }
+
+    .form-container .login-container{
+        width: 350px;
+    }
+    .form-container .welcome-screen-container{
+        display: none;
+    }
+
+}

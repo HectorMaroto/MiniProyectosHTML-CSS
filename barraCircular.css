@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+}
+
+.progress-bar{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+.progress-bar .outer-box{
+    border-radius: 50%;
+    background-color: rgb(9, 106, 231);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-bar .inner-box{
+    
+    font-size: 24px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.progress-bar svg{
+    position: absolute;
+
+}
+.progress-bar circle{
+    fill: none;
+    stroke: url(#gradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 550; /*establece el patrón de la línea (trazos y huecos) mediante una lista de números o porcentajes.*/
+    stroke-dashoffset: 550; /*distancia entre el inicio del trazo y donde queremos que empiece*/
+    animation: loading 2s linear forwards;/*linear forwards-> cuando acabe la animacion se queda en ese estado*/
+}
+
+@keyframes loading {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
