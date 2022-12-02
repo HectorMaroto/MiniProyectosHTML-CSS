@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos\barraCircular.css">   
+    <title>Document</title>
+</head>
+<body>
+    <div class="progress-bar">
+        <div class="outer-box">
+            <div class="inner-box">100%</div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+                <defs>  <!--Definir "variables" en este caso un degradado-->
+                    <linearGradient id="gradientColor">
+                        <stop offset="0%" stop-color="orange"></stop>
+                        <stop offset="100%" stop-color="gold"></stop>
+                    </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="80" stroke-linecap="round"></circle>  <!--Dimensiones del circulo y stoke-linecup nos indica la forma de la punta de la barra de progreso( redondeada en este caso con round, stroke es el trazo del border)-->
+
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
